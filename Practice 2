@@ -1,0 +1,374 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+
+
+
+int marks;
+cout<<"Enter the marks ";
+cin>>marks;
+if(marks>=40){
+    cout<<"Congrulation you passed";
+}
+
+
+
+int a,b;
+cout<<"Enter the number ";
+cin>>a>>b;
+if(a==b)
+cout<<"Equal ";
+
+
+int a,b;
+cout<<"Enter the number ";
+cin>>a>>b;
+if(b==a*a)
+cout<<"2nd number is square of 1st number ";
+
+
+
+
+int a,b,c;
+cout<<"Enter the three numbers ";
+cin>>a>>b>>c;
+int max=a;
+if(b>max)
+max=b;
+if(c>max)
+max=c;
+cout<<"Maximum number is "<<max<<endl;
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+if(n<0)
+cout<<"Negative";
+if(n>0)
+cout<<"Positive";
+if(n==0)
+cout<<"Zero";
+
+
+int a,b,c,d,e;
+cout<<"Enter the five integer   ";
+cin>>a>>b>>c>>d>>e;
+int min=a;
+int max=a;
+if(b>max)
+max=b;
+if(b<min)
+min=b;
+if(c>max)
+max=c;
+if(c<min)
+min=c;
+if(d>max)
+max=d;
+if(d<min)
+min=d;
+if(e>max)
+max=e;
+if(e<min)
+min=e;
+cout<<"Maximum number is "<<max<<endl;
+cout<<"Minimum number is "<<min;
+
+
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+if(n%2==0)
+cout<<"Even ";
+else
+cout<<"Odd";
+
+
+
+int n;
+cout<<"Enter the year ";
+cin>>n;
+if(n%4==0)
+cout<<"Yeat is a leap year ";
+else 
+cout<<"Not";
+
+
+
+int bonus,salary,grade;
+cout<<"Enter the sallary ";
+cin>>salary;
+cout<<"Enter tjhe grade ";
+cin>>grade;
+if(grade>15){
+    int a=salary*0.50;
+    salary=salary+a;
+    cout<<salary;
+}
+else{
+    int a=salary*0.25;
+    salary=salary+a;
+    cout<<salary;
+}
+
+
+int a,b;
+cout<<"Enter the number ";
+cin>>a>>b;
+if(pow(b,3)==a){
+    cout<<"The first number is the multiple of secound ";
+} 
+else
+cout<<"Not";
+
+
+int n,bill;
+cout<<"Enter the units ";
+cin>>n;
+if(n<=300){
+   bill=n*2+150;
+}
+else if(n>300 && n<=500){
+  bill=n*5+150;
+}
+else if(n>500){
+    bill=n*7+150;
+}
+if(bill>2000){
+    bill=bill+bill*0.05;
+    cout<<bill<<endl;
+}
+
+cout<<bill;
+int n,bill;
+cout<<"Enter the units";
+cin>>n;
+if(n<=300){
+    bill=n*2+150;
+}
+else if(n>300 && n<=500){
+    bill=n*5+150;
+}
+else if(n>500){
+    bill=n*7+150;
+}
+if(bill>2000){
+    bill=bill+bill*0.05;
+}
+cout<<"Total bill "<<bill;
+
+
+
+int n,bill,m=200;
+cout<<"Enter the number oof calls   ";
+cin>>n;
+if(n<=100){
+    bill=m;
+}
+else if(n<=150){
+    bill=m+(n-100)*0.60;
+}
+else if(n<=200){
+    bill=m+(50*0.60)+(n-150)*0.50;
+}
+else
+bill=m+(50*0.60)+(50*0.50)+(n-200)*0.40;
+
+cout<<bill;
+
+
+int n,m=200,bill;
+cout<<"Enter th number of calls";
+cin>>n;
+if(n<=100){
+    bill=m;
+}
+else if(n<=150){
+    bill=m+(n-100)*0.60;//   200 
+}
+else if(n<=200){
+    bill=m+(50*0.60)+(n-150)*0.50;
+}
+else 
+bill=m+(50*0.60)+(50*0.50)+(n-200)*0.40;
+
+cout<<"Total bill is "<<bill;
+
+
+int a,b,c;
+cout<<"Enter the three number ";
+cin>>a>>b>>c;
+if(a<b)
+if(a<c)
+cout<<"A is smallest "<<a;
+else 
+cout<<"C is smallest "<<c;
+else
+if(b<c)
+cout<<"B is smallest "<<b;
+else 
+cout<<"C is smallest "<<c<<endl;
+
+
+int a,b,c;
+cout<<"Enter the three number ";
+cin>>a>>b>>c;
+if(a==b)
+if(a==c)
+cout<<"Number are same ";
+else 
+cout<<"Not ";
+else
+if(b==c)
+cout<<"Number are same ";
+if(b==c)
+elsB
+cout<<"Not same ";
+if(a>b && a>c)
+cout<<"A is greter than other "<<a<<endl;
+else if(b>a && b>c)
+cout<<"B is greter than other "<<b<<endl;
+else 
+cout<<"C is greter than other "<<c;
+
+
+
+char ch;
+cout<<"Enter the character";
+cin>>ch;
+if(ch>='a' && ch<='z')
+cout<<"This is the lower case character ";
+else if(ch>='A' && ch<='Z')
+cout<<"This is the Upper case character ";
+
+else if(ch>='0' && ch<='9')
+cout<<"This is the numeric value ";
+else 
+cout<<"This is the special character ";
+
+
+Condition operator 
+
+int n;
+cout<<"Enter the marks ";
+cin>>n;
+cout<<"Result : "<<(n>=40 ? "Pass" : "Fail ");
+
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+cout<<"Number is ::>  "<<(n%2==0 ? "Even" : "Odd");
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+cout<<"Result is ::> "<<(n>=40 ? "Pass" : "Fail ");
+
+
+int n=1;
+
+Masroor:
+cout<<n<<endl;
+n++;
+if(n<=5)
+goto Masroor;
+
+int n=1;
+mas:
+cout<<"My name is masroor "<<endl;
+n++;
+if(n<=5)
+goto mas;
+
+
+int h,m;
+cout<<"Enter the hour and minute ";
+cin>>h>>m;
+if(h==0)
+cout<<"Standard time 12 :"<<m<<" AM ";
+else if(h<12)
+cout<<"Standard time "<<h<<" : "<<m<<" AM";
+else if(h==12)
+cout<<"Standard time "<<h<<" : "<<m<<" PM";
+else 
+cout<<"Standard time "<<h-12<<" : "<<m<<" PM";
+
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+cout<<"Result : "<<(n>=40 ?  "Insan ho tum" : "Loro ho tum " );
+
+
+int a,b,c;
+cout<<"Enter the three numbers ";
+cin>>a>>b>>c;
+if(a>b)
+if(a>c)
+cout<<"A is greter than the other "<<a<<endl;
+else 
+cout<<"C is greter than the other "<<c<<endl;
+else
+if(b>c)
+cout<<"B is greter than the other "<<b<<endl;
+else 
+cout<<"C id greter than the other "<<c<<endl;
+
+
+
+
+
+
+int h,m;
+cout<<"Enter the hours and minute "<<endl;
+cin>>h>>m;
+if(h==0)
+cout<<"Standard time is 12 : "<<m<<" AM"<<endl;
+if(h<12)
+cout<<"Standard time is "<<h<<" : "<<m<<" AM"<<endl;
+if(h==12)
+cout<<"Standard time is "<<h<<" : "<<m<<" PM"<<endl;
+else 
+cout<<"Standard time is "<<h-12<<" : "<<m<<endl;
+
+
+
+int a,b;
+cout<<"Enter the two numbers ";
+cin>>a>>b;
+cout<<(b==a*a ? "Yes" : "No");
+
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+cout<<n*n;
+
+
+int opp;
+cout<<"Enter the number ";
+cin>>opp;
+switch (opp)
+{
+case 1:
+cout<<"You are only one person in the world that was to be honest ";
+    break;
+    case 2:
+    cout<<"Masroor Ali ";
+        break;
+        case 3:
+        cout<<"Muhammad Wasif don";
+break;
+case 4:
+
+        default:
+cout<<"Hello word";
+    break;
+}
+
+
+   return 0;
+}
