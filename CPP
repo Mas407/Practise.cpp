@@ -1,0 +1,639 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main(){
+int n=1;
+while(n<=5){
+    cout<<"Pakistan"<<endl;
+n++;
+}
+
+int n=1;
+while(n<=10){
+    cout<<n<<endl;
+n++;
+}
+
+int n=1,sum=0,a;
+while(n<=5){
+    cout<<"Enter the number  ";
+    cin>>a;
+// cout<<a<<endl;
+    sum+=a;
+    n++;
+}
+cout<<sum;
+
+1
+2
+3
+4
+5
+=sum=15
+
+
+int n=1;
+while(n<=5){
+cout<<n<<setw(4)<<n*n<<endl;
+n++;
+}
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+int i=1;
+while(i<=10)
+{
+    cout<<n<<" x "<<i<<" = "<<n*i<<endl;
+    i++;
+}
+
+int n,digit,sum=0;
+cout<<"Enter the number ";
+cin>>n;
+while(n!=0){
+digit=n%10;
+sum+=digit;
+n=n/10;
+}
+cout<<"Sum of the value is  = "<<sum;
+
+int n,f=1;
+cout<<"Enter the number ";
+cin>>n;
+int i=1;
+while(i<=n){
+ f=f*i;
+i++;
+}
+cout<<f;
+
+int n=0;
+float radian;
+cout<<"Dagree to Radian "<<endl;
+while(n<=360){
+    radian=n*M_PI/180;
+    cout<<n<<setw(20)<<radian<<endl;
+n=n+10;
+}
+
+
+int  n=2;
+double  i=1;
+while(n<=100){
+    i=i+1.0/n;
+    n=n+2;
+}
+cout<<i;
+
+
+int n,sum=0,sum1=0;
+cout<<"Enter the positive number ";
+cin>>n;
+int i=1;
+while(i<=n){
+    if(i%2==0){
+        sum+=i;
+    }
+    else
+    sum1+=i;
+    i++;
+}
+cout<<"The sum of Even digits is "<<sum<<endl;
+cout<<"The sum of the odd digits "<<sum1;
+
+ 371=3^3+7^3+1^3=371
+
+int n,sum=0,digit;
+cout<<"Enter the number ";
+cin>>n;
+int a=n;//a=371
+while(n!=0){
+    digit=n%10;
+    sum+=pow(digit,3);
+    n=n/10;
+}
+if(sum==a)
+cout<<"Number is an arm strong "<<sum<<endl;
+else 
+cout<<"Not an armstrong ";
+
+
+
+float n,sum=0,count=0;
+float max = n, min = n;
+while(true){
+cout<<"Enter the number ";
+cin>>n;
+if(n>max)
+max=n;
+else if(n<min)
+min=n;
+if(n<0){
+break;
+}
+count++;
+sum+=n;
+}
+cout<<"You Entered "<<count<<" Numbers "<<endl;
+float avg=sum/count;
+cout<<"Average of the number is "<<avg<<endl;
+cout<<"Maximum = "<<max<<endl;
+cout<<"Minimum = "<<min<<endl;
+
+char ch;
+int countw=1;
+int countc=0;
+cout<<"Enter the charater ";
+
+while(true){
+    ch=cin.get();
+if(ch=='\n')
+break;
+    if(ch==' ')
+    countw++;
+    else 
+    countc++;
+}
+cout<<"Total words = "<<countw<<endl;
+cout<<"Total charater ="<<countc<<endl;
+
+
+
+char ch;
+int countw=1;
+int countc=0;
+cout<<"Enter the character ";
+while(true){
+ch=cin.get();
+if(ch=='\n')
+break;
+if(ch==' ')
+countw++;
+else
+countc++;
+
+}
+cout<<"\n Total word = "<<countw<<endl;
+cout<<"Total characters is ="<<countc<<endl;
+
+
+int a=1,b=1;
+cout<<a<<"   "<<b<<"\t";
+int next=2;
+int i=2;
+while(i<=10){
+cout<<next<<"\t";
+a=b;
+b=next;
+next=a+b;
+i++;
+}
+
+
+
+int a=1,b=1,n=2,i=2;
+cout<<a<<"\t"<<b<<"\t";    // 1    1   2    3    5       
+while(i<=10){              //        a     b
+   cout<<n<<"\t";            //  a=b                       //b=next       //n=a+b;
+a=b;
+b=n;
+n=a+b;
+i++;
+}
+
+
+int l,a=0,b=1,n=0;   // n
+cout<<"Enter the number ";
+cin>>l;
+while(n<l){
+    a=b;
+    b=n;
+    n=a+b;      
+}
+if(n==l)
+cout<<"Number is fabbonic ";
+else 
+cout<<"Number is not fibbonic ";
+
+int l,n=0;
+int a=0,b=1;
+cout<<"Enter the number ";
+cin>>l;
+while(n<l){
+a=b;
+b=n;
+n=a+b;
+}
+if(n==l)
+cout<<"Fibbonic ";
+else 
+cout<<"Nhi ha bhanchod";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int a,b,c;
+cout<<"Enter the three numbers ";
+cin>>a>>b>>c;
+int max=a;  // 
+if(b>max)
+max=b;
+if(c>max)
+max=c;
+cout<<"Maximum number is "<<max;
+if(a<b && a<c)
+cout<<"A is Minimum ==   "<<a;
+if(b<a  && b<c)
+cout<<"B is Minimum ==   "<<b;
+else
+cout<<"C is Minimum ==   "<<c;
+
+
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+if(n<0)
+cout<<"Negative numbers";
+if(n>0)
+cout<<"Positive numbers";
+if(n==0)
+cout<<"Zero ";
+
+
+int min=a;
+int max=a;
+b>max
+max=b;
+b<min
+min=b
+
+int a,b,c,d,e;
+cout<<"Enter the five numbers ";
+cin>>a>>b>>c>>d>>e;
+if(a>b && a>c && a>d && a>e)
+cout<<"A is maximum ";
+if(a<b && a<c && a<d %% a<e)
+cout<<"A is minimum ";
+
+int countw=1;
+int countc=0;
+char ch;
+cout<<"Enter the character ";
+while(true){
+ch=cin.get();
+if(ch=='\n')
+break;
+if(ch==' ')
+countw++;
+else
+countc++;
+}
+cout<<"\n Total word is = "<<countw<<endl<<"Total Character is equal = "<<countc;
+
+
+
+DO WHILE STATEMENTS
+
+Program No 1
+
+int n=10;
+do{
+  cout<<n<<endl;
+  n--;
+}
+while(n>=1);
+
+Program  2
+
+int a,b;
+cout<<"Enter the first number  ";
+cin>>a;
+cout<<"Enter the secounf number  ";
+cin>>b;
+do{
+  int l=pow(a,b);
+  cout<<l;
+  break;
+}
+while(true);
+
+
+Program 3
+
+char l;
+int a,b;
+do{
+  cout<<"Enter the two numbers  = ";
+  cin>>a>>b;
+cout<<endl<<a*b<<endl;
+  cout<<"Do you want to continue again (Y / N)";
+cin>>l;
+} while(l!='N' && l!='n' );
+
+
+Program 4
+
+int n,digit,sum=0;
+cout<<"Enter the number ";
+cin>>n;
+int a=n;
+while(n!=0){
+digit=n%10;
+sum=sum*10+digit;
+n=n/10;
+}
+if(sum==a)
+cout<<"Number is palidrome = "<<sum<<endl;
+else 
+cout<<"Number is not palidrome bsdk";
+
+Program 5
+
+int a,b,sum=0;
+cout<<"Enter the starting number ";
+cin>>a;
+cout<<"Enter the Ending number ";
+cin>>b;
+do{
+  if(a%2!=0)
+  cout<<a<<endl;
+  a++;
+}
+while(a<=b);
+
+
+Program 6
+
+
+
+
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+for(int i=1; i<=10; i++){
+  cout<<n<<" * "<<i<<" = "<<n*i<<endl;
+}
+
+
+
+for(int i=1; i<=5; i++){
+for(int k=1; k<=5-i; k++){
+cout<<" ";}
+  for(int j=1; j<=i; j++){
+cout<<"* ";}
+cout<<endl;
+}
+
+
+for(int i=1; i<=5; i++)
+{
+  for(int k=1; k<=5-i; k++){
+    cout<<" ";
+  }
+  for(int j=1; j<=i; j++){
+    cout<<"* ";
+  }
+  cout<<endl;
+}
+
+int a=1;
+for(int i=1; i<=4; i++){
+  for(int j=1; j<=4; j++){
+    cout<<a<<" ";
+  }
+  a++;
+  cout<<endl;
+}
+
+char ch='A';
+for(int i=1; i<=4; i++){
+  for(int j=0; j<=4; j++){
+    cout<<ch<<" ";
+  }
+  ch++;
+  cout<<endl;
+}
+
+
+int n=1;
+for(int i=1; i<=4; i++ ){
+  for(int j=1; j<=4; j++){
+    cout<<n<<" ";
+n++;
+  }
+  cout<<endl;
+
+}
+
+
+
+char ch='A';
+for(int i=1; i<=4; i++){
+  for(int i=1; i<=4; i++){
+    cout<<ch<<" ";
+    ch++;
+  }
+  cout<<endl;
+}
+
+
+for(int i=1; i<=4; i++){
+  int n=1;
+  for(int j=1; j<=i; j++){
+    cout<<n<<" ";
+    n++;
+  }
+  cout<<endl;
+}
+
+
+for(int i=1; i<=4; i++){
+  char ch='A';
+  for(int j=1; j<=i; j++){
+    cout<<ch<<" ";
+    ch++;
+  }
+  cout<<endl;
+}
+
+int n=1;
+for(int i=1; i<=4; i++){
+  for(int j=1; j<=i; j++){
+    cout<<n<<" ";
+    n++;
+  }
+  cout<<endl;
+}
+
+
+
+char ch='A';
+for(int i=1; i<=4; i++){
+  for(int j=1; j<=i; j++){
+    cout<<ch<<" ";
+    ch++;
+  }
+  cout<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+int unit,bill;
+cout<<"Enter the unit ";
+cin>>unit;
+if(unit<=300)
+bill=unit*2+150;
+else if(unit>300 && unit<=500)
+bill=unit*5+150;
+else if(unit>500)
+bill=unit*7+150;
+else if(bill>2000)
+  bill=bill+bill*0.05;
+
+cout<<"Total bill = "<<bill;
+
+
+area = radius*radiua*3.14
+
+circumfarance = 2*3.14*radiua
+
+if(n==1)
+
+int n;
+cout<<"Enter the number ";
+cin>>n;
+// 1
+if(n==1)
+{
+  cout<<"Enter the radius ";
+  cin>>radius;
+  area=radius*radius*3.14;
+  cout<<"Area is ="<<area;
+}
+if(n==2){
+  circumfarence 
+
+}
+else 
+cout<<"Invalid || plzz enter 1 or 2";
+
+int a,b,c;
+cout<<"Enter the three numbers  ";
+cin>>a>>b>>c;
+if(a<b)
+if(a<c)
+cout<<"A is the smallest number ";
+else 
+cout<<"C is the smallest number ";
+else 
+if(b<c)
+cout<<"B is the smallest number ";
+else 
+cout<<"C is the smallest number ";
+
+
+
+char ch; //char ch ='a';
+cout<<"Enter the character ";
+cin>>ch;
+if(ch>='A' && ch<='Z')
+cout<<"Character is capital ";
+else if(ch>='a' && ch<='z')
+cout<<"Character is small ";
+else if(ch>='0' && ch<='9')
+cout<<"You Enter Numeric value ";
+else
+cout<<"Special character ";
+
+
+char a;
+int n1,n2;
+cout<<"Enter the number ";
+cin>>n1>>n2;
+cout<<"Enter the number ";
+cin>>a;
+switch(a){
+case '+':
+cout<<n1+n2;
+break;
+case '-': 
+cout<<n1-n2;
+break;
+case 3: cout<<"Hussnain Ali ";
+break;
+case 4: cout<<" Ali ";
+break;
+default:
+cout<<"bhi sabb case 1 sa 4 han  ";
+break;
+}
+
+
+1.   Assignment ::> 1 number  (+,-,/,%) 2 number 
+2.   Assignment :::> case 5  ::> roll number mara 35 
+Masroor Ali BSCS location university number contact 
+47 hussnian bscs location university numbercontact 
+7 wasif uski details 
+3.   Assignment ::>
+
+ATM mechaince create karni ha 
+account number =123456789 || password =12345
+login karwana ha account number + password 
+case 1 ma passa deposit   // deposit karna agla banda account koi rendom//apna account or password compulsory 
+2 ma withdraw  (account + password)
+3 sa check balance (account + password)
+4 sa send money to another acount (account + password)
+//
+int l=123456789; int m=12345;  balance =100 
+send 200;
+n=account  number || a=passwor
+if(n==l && a==m){
+  cout<<"Case 1 : Deposit cash "<<endl;
+  cout<<"Case 2 : My  cash "<<endl;
+  cout<<"Case 3 : Deposit cash "<<endl;
+  cout<<"Case 4 : Deposit cash "<<endl;
+}
+cout<<"Enter the case ";
+cin>>n;
+
+switch (n)
+{
+case 1:
+
+  break;
+
+default:
+  break;
+}
+
+
+
+
+
+
+   return 0;
+}
